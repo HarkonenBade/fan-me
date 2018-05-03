@@ -1,12 +1,12 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
-    (links 21)
+    (links 0)
     (no_connects 0)
-    (area 49.924999 49.924999 100.075001 80.075001)
+    (area 49.924999 49.924999 100.075001 85.075001)
     (thickness 1.6)
     (drawings 8)
-    (tracks 63)
+    (tracks 61)
     (zones 0)
     (modules 16)
     (nets 8)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.8)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (user_trace_width 0.8)
     (trace_clearance 0.25)
@@ -60,8 +60,8 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 1.524 1.524)
-    (pad_drill 0.762)
+    (pad_size 0.8 0.8)
+    (pad_drill 0.5)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFF7F)
@@ -117,19 +117,18 @@
     (add_net "Net-(R4-Pad2)")
   )
 
-  (module Mounting_Holes:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 5AE8DDFF) (tstamp 5AEABA5E)
+  (module Mounting_Holes:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 5AEB5E2C) (tstamp 5AEBBFF8)
     (at 96 81)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
-    (path /5AE24B3B)
     (attr virtual)
-    (fp_text reference X1 (at 0 -4.2) (layer F.SilkS) hide
+    (fp_text reference REF** (at 0 -4.2) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value PART (at 0 4.2) (layer F.Fab) hide
+    (fp_text value MountingHole_3.2mm_M3 (at 0 4.2) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0.3 0) (layer F.Fab)
+    (fp_text user %R (at 0.3 0) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 0 0) (end 3.2 0) (layer Cmts.User) (width 0.15))
@@ -137,59 +136,37 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   )
 
-  (module Mounting_Holes:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 5AE8DDED) (tstamp 5AE22EDB)
-    (at 96 54)
-    (descr "Mounting Hole 3.2mm, no annular, M3")
-    (tags "mounting hole 3.2mm no annular m3")
-    (path /5AE24B3B)
-    (attr virtual)
-    (fp_text reference X1 (at 0 -4.2) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value PART (at 0 4.2) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text user %R (at 0.3 0) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_circle (center 0 0) (end 3.2 0) (layer Cmts.User) (width 0.15))
-    (fp_circle (center 0 0) (end 3.45 0) (layer F.CrtYd) (width 0.05))
-    (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
-  )
-
-  (module Mounting_Holes:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 5AE8DDE3) (tstamp 5AE22EE0)
-    (at 54 54)
-    (descr "Mounting Hole 3.2mm, no annular, M3")
-    (tags "mounting hole 3.2mm no annular m3")
-    (path /5AE24C43)
-    (attr virtual)
-    (fp_text reference X2 (at 0 -4.2) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value PART (at 0 4.2) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text user %R (at 0.3 0) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_circle (center 0 0) (end 3.2 0) (layer Cmts.User) (width 0.15))
-    (fp_circle (center 0 0) (end 3.45 0) (layer F.CrtYd) (width 0.05))
-    (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
-  )
-
-  (module Mounting_Holes:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 5AE8DDD9) (tstamp 5AEABAF4)
+  (module Mounting_Holes:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 5AEB5E2C) (tstamp 5AEBBFFF)
     (at 54 81)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
-    (path /5AE24C43)
     (attr virtual)
-    (fp_text reference X2 (at 0 -4.2) (layer F.SilkS) hide
+    (fp_text reference REF** (at 0 -4.2) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value PART (at 0 4.2) (layer F.Fab) hide
+    (fp_text value MountingHole_3.2mm_M3 (at 0 4.2) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0.3 0) (layer F.Fab)
+    (fp_text user %R (at 0.3 0) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 3.2 0) (layer Cmts.User) (width 0.15))
+    (fp_circle (center 0 0) (end 3.45 0) (layer F.CrtYd) (width 0.05))
+    (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
+  )
+
+  (module Mounting_Holes:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 5AEB5E2C) (tstamp 5AEBC006)
+    (at 54 54)
+    (descr "Mounting Hole 3.2mm, no annular, M3")
+    (tags "mounting hole 3.2mm no annular m3")
+    (attr virtual)
+    (fp_text reference REF** (at 0 -4.2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value MountingHole_3.2mm_M3 (at 0 4.2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text user %R (at 0.3 0) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 0 0) (end 3.2 0) (layer Cmts.User) (width 0.15))
@@ -240,7 +217,7 @@
       (net 3 "Net-(CON1-Pad1)"))
   )
 
-  (module Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight (layer F.Cu) (tedit 5AE8DDF2) (tstamp 5AE22904)
+  (module Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight (layer F.Cu) (tedit 5AEB5388) (tstamp 5AE22904)
     (at 96 60 270)
     (descr "Connector Headers with Friction Lock, 22-27-2031, http://www.molex.com/pdm_docs/sd/022272021_sd.pdf")
     (tags "connector molex kk_6410 22-27-2031")
@@ -248,7 +225,7 @@
     (fp_text reference J1 (at 1 -4.5 270) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_01x03 (at 2.54 4.5 270) (layer F.Fab)
+    (fp_text value FAN2 (at 2.54 4 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.47 -3.12) (end -1.47 3.08) (layer F.Fab) (width 0.12))
@@ -295,7 +272,7 @@
     )
   )
 
-  (module Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight (layer F.Cu) (tedit 5AE8DDF6) (tstamp 5AE22929)
+  (module Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight (layer F.Cu) (tedit 5AEB537E) (tstamp 5AE22929)
     (at 96 69.92 270)
     (descr "Connector Headers with Friction Lock, 22-27-2031, http://www.molex.com/pdm_docs/sd/022272021_sd.pdf")
     (tags "connector molex kk_6410 22-27-2031")
@@ -303,7 +280,7 @@
     (fp_text reference J2 (at 1 -4.5 270) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_01x03 (at 2.54 4.5 270) (layer F.Fab)
+    (fp_text value FAN1 (at 2.54 4 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.47 -3.12) (end -1.47 3.08) (layer F.Fab) (width 0.12))
@@ -350,15 +327,15 @@
     )
   )
 
-  (module Potentiometers:Potentiometer_Trimmer_Piher_PT-10v10_Horizontal_Px10.0mm_Py5.0mm (layer F.Cu) (tedit 58826B09) (tstamp 5AE2292A)
+  (module Potentiometers:Potentiometer_Trimmer_Piher_PT-10v10_Horizontal_Px10.0mm_Py5.0mm (layer F.Cu) (tedit 5AEB53EB) (tstamp 5AE2292A)
     (at 70 59)
     (descr "Potentiometer, horizontally mounted, Omeg PC16PU, Omeg PC16PU, Omeg PC16PU, Vishay/Spectrol 248GJ/249GJ Single, Vishay/Spectrol 248GJ/249GJ Single, Vishay/Spectrol 248GJ/249GJ Single, Vishay/Spectrol 248GH/249GH Single, Vishay/Spectrol 148/149 Single, Vishay/Spectrol 148/149 Single, Vishay/Spectrol 148/149 Single, Vishay/Spectrol 148A/149A Single with mounting plates, Vishay/Spectrol 148/149 Double, Vishay/Spectrol 148A/149A Double with mounting plates, Piher PC-16 Single, Piher PC-16 Single, Piher PC-16 Single, Piher PC-16SV Single, Piher PC-16 Double, Piher PC-16 Triple, Piher T16H Single, Piher T16L Single, Piher T16H Double, Alps RK163 Single, Alps RK163 Double, Alps RK097 Single, Alps RK097 Double, Bourns PTV09A-2 Single with mounting sleve Single, Bourns PTV09A-1 with mounting sleve Single, Bourns PRS11S Single, Alps RK09K Single with mounting sleve Single, Alps RK09K with mounting sleve Single, Alps RK09L Single, Alps RK09L Single, Alps RK09L Double, Alps RK09L Double, Alps RK09Y Single, Bourns 3339S Single, Bourns 3339S Single, Bourns 3339P Single, Bourns 3339H Single, Vishay T7YA Single, Suntan TSR-3386H Single, Suntan TSR-3386H Single, Suntan TSR-3386P Single, Vishay T73XX Single, Vishay T73XX Single, Vishay T73YP Single, Piher PT-6h Single, Piher PT-6v Single, Piher PT-6v Single, Piher PT-10h2.5 Single, Piher PT-10h5 Single, Piher PT-101h3.8 Single, Piher PT-10v10 Single, http://www.piher-nacesa.com/pdf/12-PT10v03.pdf")
     (tags "Potentiometer horizontal  Omeg PC16PU  Omeg PC16PU  Omeg PC16PU  Vishay/Spectrol 248GJ/249GJ Single  Vishay/Spectrol 248GJ/249GJ Single  Vishay/Spectrol 248GJ/249GJ Single  Vishay/Spectrol 248GH/249GH Single  Vishay/Spectrol 148/149 Single  Vishay/Spectrol 148/149 Single  Vishay/Spectrol 148/149 Single  Vishay/Spectrol 148A/149A Single with mounting plates  Vishay/Spectrol 148/149 Double  Vishay/Spectrol 148A/149A Double with mounting plates  Piher PC-16 Single  Piher PC-16 Single  Piher PC-16 Single  Piher PC-16SV Single  Piher PC-16 Double  Piher PC-16 Triple  Piher T16H Single  Piher T16L Single  Piher T16H Double  Alps RK163 Single  Alps RK163 Double  Alps RK097 Single  Alps RK097 Double  Bourns PTV09A-2 Single with mounting sleve Single  Bourns PTV09A-1 with mounting sleve Single  Bourns PRS11S Single  Alps RK09K Single with mounting sleve Single  Alps RK09K with mounting sleve Single  Alps RK09L Single  Alps RK09L Single  Alps RK09L Double  Alps RK09L Double  Alps RK09Y Single  Bourns 3339S Single  Bourns 3339S Single  Bourns 3339P Single  Bourns 3339H Single  Vishay T7YA Single  Suntan TSR-3386H Single  Suntan TSR-3386H Single  Suntan TSR-3386P Single  Vishay T73XX Single  Vishay T73XX Single  Vishay T73YP Single  Piher PT-6h Single  Piher PT-6v Single  Piher PT-6v Single  Piher PT-10h2.5 Single  Piher PT-10h5 Single  Piher PT-101h3.8 Single  Piher PT-10v10 Single")
     (path /5ADE5F10)
-    (fp_text reference RV1 (at 5 -9.05) (layer F.SilkS)
+    (fp_text reference RV1 (at 5 -9.05) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 220k (at 5 3.75) (layer F.Fab)
+    (fp_text value 220k (at 5 3.75) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_arc (start 5 -2.65) (end 5 2.56) (angle -74) (layer F.SilkS) (width 0.12))
@@ -385,13 +362,13 @@
     )
   )
 
-  (module fan-me:A1xxxxCxxx (layer F.Cu) (tedit 5AE340D1) (tstamp 5AE34356)
+  (module fan-me:A1xxxxCxxx (layer F.Cu) (tedit 5AEB53BE) (tstamp 5AE34356)
     (at 75 80 270)
     (path /5AE23148)
-    (fp_text reference SW1 (at 0 10 270) (layer F.SilkS)
+    (fp_text reference ON (at 0 -8 360) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SWITCH_SPDT (at 0 -10 270) (layer F.Fab)
+    (fp_text value OFF (at 0 8 360) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -3.683 6.604) (end -3.683 -6.604) (layer F.CrtYd) (width 0.1))
@@ -477,13 +454,13 @@
     )
   )
 
-  (module agg:0805-LED (layer F.Cu) (tedit 5765467B) (tstamp 5AEAB83C)
+  (module agg:0805-LED (layer F.Cu) (tedit 5AEB53D9) (tstamp 5AEAB83C)
     (at 66 67.5 90)
     (path /5ADE69DB)
-    (fp_text reference D1 (at -2.425 0 180) (layer F.Fab)
+    (fp_text reference PWR (at -2.5 0 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Led_Small (at 2.425 0 180) (layer F.Fab)
+    (fp_text value Led_Small (at 2.425 0 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1 -0.625) (end 1 -0.625) (layer F.Fab) (width 0.01))
@@ -638,6 +615,25 @@
       (net 6 "Net-(R3-Pad1)"))
   )
 
+  (module Mounting_Holes:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 5AEB5E2C) (tstamp 5AEBBFDA)
+    (at 96 54)
+    (descr "Mounting Hole 3.2mm, no annular, M3")
+    (tags "mounting hole 3.2mm no annular m3")
+    (attr virtual)
+    (fp_text reference REF** (at 0 -4.2) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value MountingHole_3.2mm_M3 (at 0 4.2) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text user %R (at 0.3 0) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 3.2 0) (layer Cmts.User) (width 0.15))
+    (fp_circle (center 0 0) (end 3.45 0) (layer F.CrtYd) (width 0.05))
+    (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
+  )
+
   (gr_arc (start 52 52) (end 50 52) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 52 83) (end 52 85) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 98 85) (end 52 85) (layer Edge.Cuts) (width 0.15))
@@ -647,10 +643,8 @@
   (gr_line (start 100 52) (end 100 83) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 52 50) (end 98 50) (layer Edge.Cuts) (width 0.15))
 
-  (segment (start 74 55.1) (end 74 54) (width 0.5) (layer B.Cu) (net 1))
   (segment (start 70 63.9) (end 70 66) (width 0.5) (layer B.Cu) (net 1))
   (via (at 70 66) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
-  (segment (start 80 63.9) (end 80 65) (width 0.8) (layer B.Cu) (net 1))
   (via (at 77 69) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (via (at 77 71) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (via (at 77 73) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
